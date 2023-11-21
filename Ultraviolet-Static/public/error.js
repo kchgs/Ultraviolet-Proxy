@@ -4,7 +4,7 @@ const errorCode = document.getElementById("uv-error-code");
 const registerButton = document.getElementById("uv-register-sw");
 
 if (location.pathname.startsWith(__uv$config.prefix)) {
-  error.textContent = "Click the button twice to play. ";
+  error.textContent = "Click the button to play. ";
   registerButton.classList.add("show");
 }
 
