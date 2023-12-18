@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -22,7 +30,7 @@
     />
     <meta name="googlebot" content="index, follow, snippet" />
     <link rel="shortcut icon" content="favicon.ico" />
-    <link rel="stylesheet" href="index.css" />
+
     <script src="uv/uv.bundle.js" defer></script>
     <script src="uv/uv.config.js" defer></script>
     <script src="register-sw.js" defer></script>
@@ -63,57 +71,121 @@
   </head>
 
   <body>
-    <div
-      title="Ultraviolet Logo"
-      class="flex-center logo-wrapper header-center"
-    >
-      <img class="logo" src="uv.png" alt="Ultraviolet" />
-      <h1>Ultraviolet | TN</h1>
-    </div>
-    <div class="flex-center desc left-margin">
-      <p>
-        Ultraviolet is highly sophisticated proxy used for evading internet
-        censorship.
-      </p>
-    </div>
+    <style>
+      body {
+        background-color: #8b460b;
+        margin: 0;
+        overflow-y: hidden;
+      }
+      img {
+        z-index: 1000000;
+        position: absolute;
+        background-color: #8b460b;
+        position: absolute;
+        left: 50%;
+        width: 500px;
+        top: 37%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
 
-    <form id="uv-form" class="flex-center">
-      <input
-        id="uv-search-engine"
-        value="https://www.google.com/search?q=%s"
-        type="hidden"
-      />
-      <input id="uv-address" type="text" placeholder="Search the web freely" />
-    </form>
+    <style>
+      .center {
+        height: 100vh;
+        vertical-align: middle;
+        display: table-cell;
+      }
+
+      .center1 {
+        width: 100%;
+        height: 100%;
+
+        background-color: #8b460b;
+        display: table;
+      }
+    </style>
+
+    <img src="https://rusk-games.pages.dev/images/logo.png" alt="" />
+    <div class="center1">
+      <div class="center">
+        <div class="container d-flex align-items-center justify-content-center">
+          <div class="row">
+            <div class="col-md-auto">
+              <div class="mb-3 ">
+            
+                <form id="uv-form" class="flex-center">
+
+                <i class="bi bi-search text-light"></i>
+
+                <style>
+                  
+                  .span {
+                    background-color: #00000000;
+                    border-right: none;
+                  }
+
+                  i{
+                    position: absolute;
+                    transform: translate(12px, 45%);
+                  }
+                  
+                  ::placeholder {
+                    color: white !important;
+                    opacity: 1; /* Firefox */
+                  }
+
+                  ::-ms-input-placeholder {
+                    /* Edge 12-18 */
+                    color: white !important;
+                  }
+                  textarea:focus, input:focus{
+                      outline: none !important;
+                  }
+                  .form-control{
+                    width: 315px;
+                    margin: auto;
+                    padding-left: 35px;
+                  }
+                  .form-control:focus{
+                    width: 400px;
+                    
+                    transition: width 1s, transform 1s;
+                  }
+                </style>
+                  <input
+                    id="uv-search-engine"
+                    value="https://www.google.com/search?q=%s"
+                    type="hidden"
+                  />
+
+                <input
+                  style="
+                    font-size: 20px;
+                    background-color: #ffffff00;
+                    color: white;
+                  "
+                  type="text"
+                  id="uv-address"
+                  class="form-control text-light "
+                  placeholder="Search Google or type a URL"
+                  aria-label="Link"
+                />
+                
+                </form>
+                <div class="desc left-margin">
+                  <p id="uv-error"></p>
+                  <pre id="uv-error-code"></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <div class="desc left-margin">
       <p id="uv-error"></p>
       <pre id="uv-error-code"></pre>
     </div>
-    <footer>
-      <div>
-        <a
-          title="The TitaniumNetwork GitHub organization"
-          href="https://github.com/titaniumnetwork-dev"
-          >TitaniumNetwork</a
-        >
-        <a title="The TitaniumNetwork Discord" href="https://discord.gg/unblock"
-          >Discord</a
-        >
-        <a
-          title="The TompHTTP GitHub organization"
-          href="https://github.com/tomphttp"
-          >TompHTTP</a
-        >
-        <a
-          title="The official deployment repository for Ultraviolet"
-          href="https://github.com/titaniumnetwork-dev/Ultraviolet-App"
-          >GitHub</a
-        >
-        <a title="License information" href="credits.html">Credits</a>
-      </div>
-      <div>
-        <span>Ultraviolet &copy; TN 2023</span>
-      </div>
-    </footer>
   </body>
 </html>
