@@ -8,6 +8,18 @@ if (location.pathname.startsWith(__uv$config.prefix)) {
   registerButton.classList.add("show");
 }
 
+window.addEventListener("load", async () => {
+  try {
+    await registerSW();
+    location.reload();
+  } catch (err) {
+    error.textContent = "Failed to register service worker.";
+    errorCode.textContent = err.toString();
+    registerButton.classList.remove("show");
+  }
+});
+
+
 async function start(){
 try {
     await registerSW();
@@ -18,7 +30,6 @@ try {
     registerButton.classList.remove("show");
   }
 }
-
 start();
 registerButton.addEventListener("click", async () => {
   try {
