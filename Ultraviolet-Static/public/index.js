@@ -31,7 +31,6 @@ form.addEventListener("submit", async (event) => {
     throw err;
   }
 
-  alert("starting")
   window.top.postMessage('start', '*')
 
   const url = search(address.value, searchEngine.value);
