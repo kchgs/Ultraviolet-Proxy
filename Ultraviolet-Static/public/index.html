@@ -116,9 +116,14 @@
                 <form id="uv-form" class="flex-center">
 
                 <i class="bi bi-search text-light"></i>
+				<script>
+				  window.top.postMessage('restart', '*')
 
+				</script>
                 <style>
-                  
+                  .mb-3{
+					margin-top: 25px;
+}
                   .span {
                     background-color: #00000000;
                     border-right: none;
@@ -145,12 +150,12 @@
                     width: 315px;
                     margin: auto;
                     padding-left: 35px;
+
+                    transition: width 1s, transform 1s;
                   }
                   .form-control:focus{
                     width: 400px;
-                    
-                    transition: width 1s, transform 1s;
-                  }
+					}
                 </style>
                   <input
                     id="uv-search-engine"
