@@ -4,20 +4,57 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-  <title>Click to Play</title>
+  <title>loading...</title>
   <meta name="description"
     content="Ultraviolet is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!" />
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#434c5e" />
   <meta name="googlebot" content="noindex, nofollow, nosnippet" />
   <base href="/" />
   <link rel="shortcut icon" content="favicon.ico" />
-  <!-- <link rel="stylesheet" href="index.css" /> -->
 </head>
 
-<body style="background-color:#8b460b ;">
-    <div>
-        <h1 style="color: #FF7845; font-size: 50px;">Loading Site...</h1>
-    </div>
+<body>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      padding: 0px;
+      text-align: center;
+    }
+    p{
+      padding: 0px;
+      font-size: 30px;
+      color: #FF7845;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background-color: #8b460b ;
+
+      /* min-height: 100vh; */
+    }
+
+    img,
+    button {
+      padding-top: 20px;
+      height: 95%;
+      cursor: pointer;
+      /* vertical-align: top; */
+      border: none;
+      background: none;
+    }
+  </style>
+
+
+
+  <p id="uv-error" style="height: 0px; padding: 0px; margin: 0px;"></p>
+  <button id="uv-register-sw" style="background-color: none; border-radius: none;">
+    <img
+      src=""
+      alt="">
+  </button>
 
   <script src="uv/uv.bundle.js"></script>
   <script src="uv/uv.config.js"></script>
