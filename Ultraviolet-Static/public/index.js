@@ -26,8 +26,8 @@ function iniFrame() {
     else {
         // The page is not in an iFrame
         $('body').empty()
-              document.write("Visit rusk-games.pages.dev/proxy");
-
+        alert('Please visit https://rusk-games.pages.dev/proxy to continue using.')
+        
     }
 }
  
