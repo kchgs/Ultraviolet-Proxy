@@ -22,7 +22,6 @@ const errorCode = document.getElementById("uv-error-code");
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
-  window.top.postMessage('start', '*')
 
   try {
     await registerSW();
@@ -31,6 +30,9 @@ form.addEventListener("submit", async (event) => {
     errorCode.textContent = err.toString();
     throw err;
   }
+
+  alert("starting")
+  window.top.postMessage('start', '*')
 
   const url = search(address.value, searchEngine.value);
   location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
