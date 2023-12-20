@@ -19,20 +19,6 @@ const error = document.getElementById("uv-error");
  * @type {HTMLPreElement}
  */
 const errorCode = document.getElementById("uv-error-code");
-function iniFrame() {
-    if (window.location !== window.parent.location) {
-        // The page is in an iFrames
-    }
-    else {
-        // The page is not in an iFrame
-        $('body').empty()
-        alert('Please visit https://rusk-games.pages.dev/proxy to continue using.')
-        
-    }
-}
- 
-// Calling iniFrame function
-iniFrame();
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
