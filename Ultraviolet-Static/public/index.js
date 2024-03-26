@@ -35,4 +35,5 @@ form.addEventListener("submit", async (event) => {
 
   const url = search(address.value, searchEngine.value);
   location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+  alert("Redirecting to: " + __uv$config.decodeUrl(__uv$config.encodeUrl(url)))
 });
