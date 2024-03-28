@@ -1,22 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>::placeholder {
-    text-align: center;
-    font-size: 15px;
-    color: white;
-  
-}
-    .search{
-      width:400px;
-      height:50px;
-      border-radius: 8px;
-      text-align: center;
-      font-size: 15px;
-      background: rgb(46,46,46);
-      border: 2px black solid,
-      margin-bottom: 33%
-      </style>
     
     <meta charset="utf-8" />
     <meta
@@ -80,7 +64,27 @@
       }
     </script>
   </head>
-
+  
+  <body>
+    <style>
+    ::placeholder {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+  
+}
+    .search{
+      width:400px;
+      height:50px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 15px;
+      background: rgb(46,46,46);
+      border: 2px black solid,
+      margin-bottom: 33%
+      {
+      </style>
+  </body>
   <body>
     <div
       title="Ultraviolet Logo"
@@ -101,38 +105,12 @@
         value="https://www.google.com/search?q=%s"
         type="hidden"
       />
-      <input id="uv-address" type="text" placeholder="Search the web freely" />
+      <input id="uv-address" type="text" placeholder="Search Google or Enter URL" />
     </form>
     <div class="desc left-margin">
       <p id="uv-error"></p>
       <pre id="uv-error-code"></pre>
     </div>
-    <footer>
-      <div>
-        <a
-          title="The TitaniumNetwork GitHub organization"
-          href="https://github.com/titaniumnetwork-dev"
-          >TitaniumNetwork</a
-        >
-        <a title="The TitaniumNetwork Discord" href="https://discord.gg/unblock"
-          >Discord</a
-        >
-        <a
-          title="The TompHTTP GitHub organization"
-          href="https://github.com/tomphttp"
-          >TompHTTP</a
-        >
-        <a
-          title="The official deployment repository for Ultraviolet"
-          href="https://github.com/titaniumnetwork-dev/Ultraviolet-App"
-          >GitHub</a
-        >
-        <a title="License information" href="credits.html">Credits</a>
-      </div>
-      <div>
-        <span>Ultraviolet &copy; TN 2023</span>
-      </div>
-    </footer>
     <iframe style="display: none;" id="uv-frame"></iframe>
   </body>
 </html>
